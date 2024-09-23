@@ -9,7 +9,10 @@ static const char *TAG = "empty_uart_component.component";
 void EmptyUARTComponent::setup() {
 
 }
-
+void MyComponent::loop() {
+  // ...
+  publish_event(MyComponentEvent());
+}
 void EmptyUARTComponent::loop() {
 
 }
